@@ -1,0 +1,26 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 5MB # 限制文件上传的大小
+# Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+ali:
+  oss:
+    file:
+      endpoint: oss-cn-beijing.aliyuncs.com
+      accessKeyId: LTAI4GE6uD2SRy1fZuLmWXP8
+      accessKeySecret: 5ZUppGWdJxJ4ZB3l7XGzuCtnBOoqEx
+      yourBucketName: study-xb
+#阿里云oss配置
+#ali.oss.file.endpoint=oss-cn-beijing.aliyuncs.com
+#ali.oss.file.accessKeyId=LTAI4GE6uD2SRy1fZuLmWXP8
+#ali.oss.file.accessKeySecret=5ZUppGWdJxJ4ZB3l7XGzuCtnBOoqEx
+#ali.oss.file.yourBucketName=study-xb
